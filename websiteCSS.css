@@ -50,9 +50,11 @@
 }
 #Tune-up-ebike{
     display: none;
+    background-color: #1c2631;
 }
 #Tune-up-mtb{
     display: none;
+    background-color: #1c2631;
 }
 
 /* pricing for services */
