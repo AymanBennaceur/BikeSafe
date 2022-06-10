@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel = "stylesheet" href = "websiteCSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="section1">
+
+        <!-- Nav tabs -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">BIKE SAFE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#aboutt">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Lead page -->
+        <div class="lead-page2 text-white">
+            <div class="hh">
+                <h2 class="pt-2 text-white">1- Choose Bike Type:</h2>
+                <div class="row">
+                    <div class="img1 col-xs-12 col-lg-4 " >
+                        <img class="m-auto" src="./images/Rectangle 5.png" alt="">
+                        <p>ROAD BIKE</p>
+                        <button id="roadBike">Select</button>
+                    </div>
+                    <div class="img1 col-xs-12 col-lg-4 m-auto">
+                        <img src="./images/Rectangle 6.png" alt="">
+                        <P>E-BIKE</P>
+                        <button id="ebikebtn">Select</button>
+                    </div>
+                    <div class="img1 col-xs-12 col-lg-4 m-auto">
+                        <img src="./images/Rectangle 7.png" alt="">
+                        <P>MOUNTAIN BIKE</P>
+                        <button id="mtb">Select</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Toggle Services page -->
+            <div id="Tune-up-Road" class="m-0 pb-5">
+                <h2 class="text-white">2- Tune up Services: <b>Road Bike</b> </h2>
+                <p class="text-white">Our Plans are carefully crafted to satisfy the majority of cyclists, be it if you are an expert doing over hunderds of KM's a week or just a regular cyclist, we at Bike Safe have got you covered!</p>
+                <section class="subscription_method">
+                    <div class="column">
+                      <div class="price_h">
+                        <div class="price">
+                          <div class="dollar">$</div>
+                          39.99
+                        </div>
+                        <div class="name">Classic</div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="feature">
+                        <img src="./images/iconmonstr-check-mark-13.svg">
+                        Adjust shifting and brakes
+                      </div>
+                      <div class="feature no">
+                        <img src="./images/x-square.svg">
+                        Lubricate Chain
+                      </div>
+                      <div class="feature no">
+                        <img src="./images/x-square.svg">
+                        Frame and wheel cleaning
+                      </div>
+    
+                      <button class="cta" onclick="regular()">Select</button>
+                    </div>
+                    <div class="column nice">
+                      <div class="Recommended">Recommended</div>
+                      <div class="price_h">
+                        <div class="price">
+                          <div class="dollar">$</div>
+                            54.99
+                        </div>
+                        <div class="name">Complete</div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="feature">
+                        <img src="./images/iconmonstr-check-mark-13.svg">
+                        Adjust shifting and brakes
+                      </div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Lubricate Chain
+                      </div>
+                      <div class="feature no">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Frame and wheel cleaning
+                      </div>
+                      <button class="cta" onclick = "premium()">Select</button>
+                    </div>
+                    <div class="column Luxe">
+                      
+                      <div class="price_h">
+                        <div class="price">
+                          <div class="dollar">$</div>
+                          62.99
+                        </div>
+                        <div class="name">Bike Safe Special</div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Adjust shifting and brakes
+                      </div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Lubricate Chain
+                      </div>
+                      <div class="feature ">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Frame and wheel cleaning
+                      </div>
+                      <button class="cta" onclick="luxe()">Select</button>
+                    </div>
+                </section>
+            </div>
+            <div id="Tune-up-ebike">
+                <h2>2- Tune up Services: <b>E-Bike</b> </h2>
+                <p>Our Plans are carefully crafted to satisfy the majority of cyclists, be it if you are an expert doing over hunderds of KM's a week or just a regular cyclist, we at Bike Safe have got you covered!</p>
+                <section class="subscription_method">
+                    <div class="column">
+                      <div class="price_h">
+                        <div class="price">
+                          <div class="dollar">$</div>
+                          39.99
+                        </div>
+                        <div class="name">Classic</div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Adjust shifting and brakes
+                      </div>
+                      <div class="feature no">
+                        <img src="/images/x-square.svg">
+                        Speed Shifter Check
+                      </div>
+                      <div class="feature no">
+                        <img src="/images/x-square.svg">
+                        Battery Testing
+                      </div>
+    
+                      <button class="cta" onclick="regular()">Select</button>
+                    </div>
+                    <div class="column nice">
+                      <div class="Recommended">Recommended</div>
+                      <div class="price_h">
+                        <div class="price">
+                          <div class="dollar">$</div>
+                            54.99
+                        </div>
+                        <div class="name">Complete</div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Adjust shifting and brakes
+                      </div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Speed Shifter Check
+                      </div>
+                      <div class="feature no">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Battery Testing
+                      </div>
+                      <button class="cta" onclick = "premium()">Select</button>
+                    </div>
+                    <div class="column Luxe">
+                      
+                      <div class="price_h">
+                        <div class="price">
+                          <div class="dollar">$</div>
+                          62.99
+                        </div>
+                        <div class="name">Bike Safe Special</div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Adjust shifting and brakes
+                      </div>
+                      <div class="feature">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Speed Shifter Check
+                      </div>
+                      <div class="feature ">
+                        <img src="/images/iconmonstr-check-mark-13.svg">
+                        Battery Testing
+                      </div>
+                      <button class="cta" onclick="luxe()">Select</button>
+                      </div>
+                  </section>
+            </div>
+                <div id="Tune-up-mtb">
+                    <h2>2- Tune up Services: <b>Mountain Bike</b> </h2>
+                    <p>Our Plans are carefully crafted to satisfy the majority of cyclists, be it if you are an expert doing over hunderds of KM's a week or just a regular cyclist, we at Bike Safe have got you covered!</p>
+                    <section class="subscription_method">
+                        <div class="column">
+                          <div class="price_h">
+                            <div class="price">
+                              <div class="dollar">$</div>
+                              39.99
+                            </div>
+                            <div class="name">Classic</div>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="feature">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Front Suspension Fork
+                          </div>
+                          <div class="feature no">
+                            <img src="/images/x-square.svg">
+                            Speed Shifter Check
+                          </div>
+                          <div class="feature no">
+                            <img src="/images/x-square.svg">
+                            Dismantle, clean, grease
+                          </div>
+        
+                          <button class="cta" onclick="regular()">Select</button>
+                        </div>
+                        <div class="column nice">
+                          <div class="Recommended">Recommended</div>
+                          <div class="price_h">
+                            <div class="price">
+                              <div class="dollar">$</div>
+                                54.99
+                            </div>
+                            <div class="name">Complete</div>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="feature">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Adjust shifting and brakes
+                          </div>
+                          <div class="feature">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Front Suspension Fork
+                          </div>
+                          <div class="feature no">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Dismantle, clean, grease
+                          </div>
+                          <button class="cta" onclick = "premium()">Select</button>
+                        </div>
+                        <div class="column Luxe">
+                          
+                          <div class="price_h">
+                            <div class="price">
+                              <div class="dollar">$</div>
+                              62.99
+                            </div>
+                            <div class="name">Bike Safe Special</div>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="feature">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Adjust shifting and brakes
+                          </div>
+                          <div class="feature">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Front Suspension Fork
+                          </div>
+                          <div class="feature ">
+                            <img src="/images/iconmonstr-check-mark-13.svg">
+                            Dismantle, clean, grease
+                          </div>
+                          <button class="cta" onclick="luxe()">Select</button>
+                          </div>
+                    </section>
+                </div>
+            <div class="bikeExpert text-white">
+                <h2 class="pt-5 text-white">3- Choose your Mechanic:</h2>
+                <div class="row">
+                    <div class="img1 col-xs-12 col-lg-4 " >
+                        <img class="m-auto" src="./images/John.png" alt="">
+                        <p>Professional bike Mechanic with over 8 years of experience
+
+                            John Enjoys going on mountain bike rides during weekends and knows all about mountain bikes!
+                            </p>
+                        <button class="showCalendar">Select</button>
+                    </div>
+                    <div class="img1 col-xs-12 col-lg-4 m-auto">
+                        <img src="./images/Olivia.png" alt="">
+                        <p>Expert bike Mechanic with over 6 years of experience.
+
+                            Olivia Enjoys going on long road bike rides and knows how important comfort is for those long range rides!
+                            </p>
+                        <button class="showCalendar">Select</button>
+                    </div>
+                    <div class="img1 col-xs-12 col-lg-4 m-auto">
+                        <img src="./images/Paul.png" alt="">
+                        <p>Professional Mechanic with a degree in electronics, Paul has over 4years of experience in bike repair.
+
+                            Paul Enjoys commuting to work daily with his E-bike 
+                            </p>
+                        <button class="showCalendar">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Calendar text-white">
+                <h2 class="text-white">4- Choose a date and time</h2>
+                <p class="text-white">Based on your previous selections: The next available dates are</p>
+                <div class="days">
+                    <div class="row">
+                        <div class="right col-xs-12 col-lg-7 ">
+                            <ul class="list-group list-group-horizontal">
+                                <button id="D1" class="list-group-item">An item</button>
+                                <Button id="D2" class="list-group-item">A second item</button>
+                                <button id="D3" class="list-group-item">A third item</button>
+                            </ul>
+                            <ul class="list-group list-group-horizontal">
+                                <button id="D4" class="list-group-item">An item</button>
+                                <Button id="D5" class="list-group-item">A second item</button>
+                                <button id="D6" class="list-group-item">A third item</button>
+                            </ul>
+                        </div>
+                        <div class="confirmReject left col-xs-12 col-lg-5">
+                            Based on your selection an appointment is available at:  3PM 
+                            <br>
+                            <button id="confirm">Confirm</button>
+                            <!-- giving reject button refersh the page for now -->
+                            <button href="#" id="reject">Reject</button> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="information text-white">
+                <h2>5- Enter Information</h2>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
+                    <label for="floatingInput">Email address</label>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  </div>
+                  <button id="bookApp" onclick="myFunction()">Book Appointment</button>
+            </div>
+
+            <!-- footer -->
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-heading footer-1">
+                        <h2>Quick Links</h2>
+                        <a href="index.html">Main Page</a>
+                        <a href="booking.html">Book an Appointment</a>
+                    </div>
+                    <div class="footer-heading footer-2">
+                        <h2>Customer Support</h2>
+                        <a href="#">Support</a>
+                        <a class = "email" onclick="myFunction()">Our Email</a>
+                    </div>
+                    <div class="footer-heading footer-3">
+                        <h2>Address & Hours of opening</h2>
+                        <p style="color:rgba(209, 151, 88, 1)"><b>Address:</b></p> <p> 
+                            75 Laurier Ave. E, Ottawa, ON K1N 6N5</p>
+                            <p style="color:rgba(209, 151, 88, 1)"><b>Opening Hours:</b></p> <p>
+                                Monday - Saturday: 10 am --> 6pm <br>
+                                Sunday:
+                                Closed
+                            </p>
+                    </div>
+                    <div class="footer-email-form">
+                        <h2>Join Our Newsletter</h2>
+                        <input type="email" placeholder="Enter your email address" id="footer-email">
+                        <input onclick="document.location.reload(true)" type="submit" value="Sign Up" id="footer-email-btn">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        All rights reserved to Bike Safe © - 2022
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script src="script.js">
+
+        </script>
+
+
+        
+
+
+    
+    
+</body>
+</html>
